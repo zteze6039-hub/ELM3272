@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BeachAudioPlayer from "@/components/BeachAudioPlayer";
 import {
   ArrowDownToLine,
   ArrowUpRight,
@@ -129,6 +130,7 @@ export default function Home() {
 
   return (
     <main className="site-shell">
+      <BeachAudioPlayer />
       <div className="module-rain" aria-hidden="true">
         {rainModules.map((module, index) => (
           <span
@@ -246,7 +248,7 @@ export default function Home() {
             <a className="text-link text-link--dark" href="#inicio">Volver al inicio <ArrowUpRight size={16} /></a>
           </div>
           <a className="promo-art" href={releaseUrl} target="_blank" rel="noreferrer" aria-label="Abrir el release de DC-ELM327 en GitHub">
-            <img src="/assets/dc-lab.png" alt="Vehículo promocional de DC-Lab en una playa" />
+            <img src="/manus-storage/DC-Lab(6)_f216be23.png" alt="Vehículo promocional de DC-Lab en una playa" />
             <span className="promo-art__badge"><Waves size={15} /> DC-LAB / 06</span>
             <span className="promo-art__link"><ArrowUpRight size={15} /> Ver release</span>
           </a>

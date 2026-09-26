@@ -1,4 +1,5 @@
 import { ArrowDownToLine, ArrowUpRight, CheckCircle2, Github, Moon, Radio, ShieldCheck, Sparkles, Waves } from "lucide-react";
+import BeachAudioPlayer from "@/components/BeachAudioPlayer";
 
 const debugUrl = "https://github.com/dcg0/DCecuelm327/releases/download/build-1/androbd-debug.apk";
 const releaseUrl = "https://github.com/dcg0/DCecuelm327/releases/tag/build-1";
@@ -17,14 +18,15 @@ const features = [
 export default function Campamento() {
   return (
     <main className="camp-page">
+      <BeachAudioPlayer />
       <div className="camp-rain" aria-hidden="true">
         {fallingModules.map(([left, delay, duration], index) => <span key={index} style={{ left, animationDelay: delay, animationDuration: duration }}>ELM327</span>)}
       </div>
       <section className="camp-hero">
         <div className="camp-hero__bg" />
         <header className="camp-nav container">
-          <a className="camp-brand" href="/playa"><span><Waves size={18} /></span><strong>DC·ELM327 <small>CAMPAMENTO</small></strong></a>
-          <div className="camp-nav__links"><a href="/playa">Versión playa</a><a href="#descarga">Descarga debug <ArrowDownToLine size={14} /></a></div>
+          <a className="camp-brand" href="/"><span><Waves size={18} /></span><strong>DC·ELM327 <small>CAMPAMENTO</small></strong></a>
+          <div className="camp-nav__links"><a href="/">Versión playa</a><a href="#descarga">Descarga debug <ArrowDownToLine size={14} /></a></div>
         </header>
         <div className="container camp-hero__content">
           <div className="camp-hero__copy">
@@ -56,9 +58,9 @@ export default function Campamento() {
       </section>
 
       <section className="camp-section camp-section--proof">
-        <div className="container camp-proof-layout"><div className="camp-proof-copy"><span className="camp-section-kicker">04 / REFERENCIA</span><h2>La pantalla de<br /><em>tu próxima salida.</em></h2><p>La captura de la APK queda al final como referencia visual de la descarga debug.</p></div><a className="camp-proof-image" href={debugUrl} target="_blank" rel="noreferrer"><img src="/assets/debug-release.jpg" alt="Captura de la descarga de DC-ELM327 debug" /><span><ArrowDownToLine size={15} /> Abrir descarga</span></a></div>
+        <div className="container camp-proof-layout"><div className="camp-proof-copy"><span className="camp-section-kicker">04 / REFERENCIA</span><h2>La pantalla de<br /><em>tu próxima salida.</em></h2><p>La captura de la APK queda al final como referencia visual de la descarga debug.</p></div><a className="camp-proof-image" href={debugUrl} target="_blank" rel="noreferrer"><img src="/manus-storage/Screenshot_20260925_175358_GitHub_2b5d4db6.jpg" alt="Captura de la descarga de DC-ELM327 debug" /><span><ArrowDownToLine size={15} /> Abrir descarga</span></a></div>
       </section>
-      <footer className="camp-footer"><div className="container"><a href="/playa">DC·ELM327 / <span>CAMPAMENTO</span></a><span>Conecta de noche. Lee con claridad.</span></div></footer>
+      <footer className="camp-footer"><div className="container"><a href="/">DC·ELM327 / <span>CAMPAMENTO</span></a><span>Conecta de noche. Lee con claridad.</span></div></footer>
     </main>
   );
 }
