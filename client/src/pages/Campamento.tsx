@@ -58,7 +58,7 @@ export default function Campamento() {
       <section className="camp-section camp-section--proof">
         <div className="container camp-proof-layout"><div className="camp-proof-copy"><span className="camp-section-kicker">04 / REFERENCIA</span><h2>La pantalla de<br /><em>tu próxima salida.</em></h2><p>La captura de la APK queda al final como referencia visual de la descarga debug.</p></div><a className="camp-proof-image" href={debugUrl} target="_blank" rel="noreferrer"><img src="/assets/debug-release.jpg" alt="Captura de la descarga de DC-ELM327 debug" /><span><ArrowDownToLine size={15} /> Abrir descarga</span></a></div>
       </section>
-      <footer className="camp-footer"><div className="container"><a href="/">DC·ELM327 / <span>CAMPAMENTO</span></a><span>Conecta de noche. Lee con claridad.</span></div></footer>
+      <footer className="camp-footer"><div className="container"><a href="/playa">DC·ELM327 / <span>CAMPAMENTO</span></a><span>Conecta de noche. Lee con claridad.</span></div></footer>
     </main>
   );
 }
